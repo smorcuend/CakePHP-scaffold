@@ -1,0 +1,114 @@
+/*
+ 
+ HTML5 SKELETON :: style.css
+ ----------------------------------------------------------
+	Based on http://html5reset.org/ and updates from https://github.com/botto
+
+ -----------------------------------------------------------------------------*/
+
+/* Reset default styles */
+ @import url(reset_min.css);
+
+/* Ok, this is where the fun starts.
+ -----------------------------------------------------------------------------*/
+
+/* New Linux and Windows-friendly sans-serif font stack: http://mky.be/fontstack */
+body {
+	font: 13px Helmet, Freesans, sans-serif;line-height: 1; background: lightgray;	
+}
+
+/* using local fonts? make sure to read up on Paul Irish's
+ Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/* we like off-black for text */
+body, select, input, textarea {	color: #333;}
+
+#wrapper{
+	width: 99%;
+	height: auto;
+	text-align: center;
+}
+.centered{margin:0 auto}
+
+a {color: #03f;}
+a:hover {color: #69f;}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection {
+	background: #fcd700;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #fcd700;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #fcd700;}
+
+ins {
+	background-color: #fcd700;
+	color: #000;
+	text-decoration: none;
+}
+mark {
+	background-color: #fcd700;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Print styles!
+ -----------------------------------------------------------------------------*/
+@media print {
+}
+
+/* Media queries!
+ -----------------------------------------------------------------------------*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
