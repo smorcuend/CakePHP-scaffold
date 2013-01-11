@@ -99,9 +99,5 @@ class PagesController extends AppController {
 		$this->render(implode('/', $path));
 	}
 
-	function home(){
-
-	}
-	function item2(){}
 
 }
