@@ -1,4 +1,4 @@
-# PHPBackend_Ready2Use
+# PHPBackend Ready2Use
 
 ## Description:
 
@@ -6,17 +6,23 @@ Web Back-end scaffold based on [CakePHP](http://www.cakephp.org) MVC framework a
 
 ### ChangeLog:
 
-#####PHPBackend_Ready2Use v0.1
+#####PHPBackend Ready2Use v0.3
 
-* Initial release based on CakePHP 2.2.3.
-* Added ["Browser Detector"](https://github.com/smorcuend/BrowserDetectComp_CakePHP) plugin.
-* Basic blank template added.
+* Updated to CakePHP 2.3.0
+* HTML5-SKELETON demo template updated ([HTML5-SKELETON](http://smorcuend.github.com/HTML5-SKELETON)).
+* Fix minor bugs
 
-#####PHPBackend_Ready2Use v0.2
+#####PHPBackend Ready2Use v0.2
 
 * Updated to CakePHP 2.2.4.
 * Ajax navigation added.
 * HTML5-SKELETON demo template added ([HTML5-SKELETON](http://smorcuend.github.com/HTML5-SKELETON)).
+
+#####PHPBackend Ready2Use v0.1
+
+* Initial release based on CakePHP 2.2.3.
+* Added ["Browser Detector"](https://github.com/smorcuend/BrowserDetectComp_CakePHP) plugin.
+* Basic blank template added.
 
 ## Instalation:
 

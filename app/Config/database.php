@@ -60,12 +60,12 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
-		'datasource' => 'Database/Sqlite',
+		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => '',
-		'password' => '',
-		'database' => 'database',
+		'login' => 'root',
+		'password' => 'asdzxc_1234',
+		'database' => 'phpbackend',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

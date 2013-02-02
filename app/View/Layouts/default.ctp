@@ -16,7 +16,7 @@
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$cakeDescription = "PHPBackend_Ready2Use";
+$cakeDescription = "PHPBackend Ready2Use";
 
 echo $this->Html->docType('html5');
 ?>
@@ -29,10 +29,7 @@ echo $this->Html->docType('html5');
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>
-		<?php echo $cakeDescription; ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
+	<title><?php echo $cakeDescription.' : '.$title_for_layout; ?></title>
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->meta('keywords','keywords');
@@ -41,8 +38,6 @@ echo $this->Html->docType('html5');
 
 		echo $this->Html->css('style');
 		echo $this->Html->script('modernizr.custom-2.6.2.min.js'); // Include Modernizr
-		echo $this->Html->script('jquery-1.8.3.min.js'); // Include jQuery library
-
 		
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -89,40 +84,40 @@ echo $this->Html->docType('html5');
 		<header>
 
 			<img src="img/html5_skeleton.png" alt="HTML5-SKELETON logo" class="img_title inline">
-			<h1 class="inline">HTML5-SKELETON Template</h1>
+			<h1 class="inline">PHPBackend Ready2Use</h1>
 			<img src="img/html5_skeleton.png" alt="HTML5-SKELETON logo" class="img_title inline">
 
 			<nav>			
 				<ul>
 					<li class="current">
 						<?php 
-						echo $this->Js->link('Home',
-							array( 'controller' => 'pages', 'action' => 'home'),
-							array( 'update' => '#content', 'htmlAttributes' => array())
+						echo $this->Html->link('Home', '/'
+							//array( 'controller' => 'pages', 'action' => 'home')
+							//array( 'update' => '#content', 'htmlAttributes' => array())
 						);
 						?>
 					</li>
 					<li>
 						<?php
-						echo $this->Js->link('Item2',
-							array( 'controller' => 'pages', 'action' => 'item2'),
-							array( 'update' => '#content','htmlAttributes' => array())
+						echo $this->Html->link('Item2','/item2'
+							//array( 'controller' => 'pages', 'action' => 'item2')
+							//array( 'update' => '#content','htmlAttributes' => array())
 						);
 						?>
 					</li>
 					<li>
 						<?php
-						echo $this->Js->link('Item3',
-							array( 'controller' => 'pages', 'action' => 'item3'),
-							array( 'update' => '#content','htmlAttributes' => array())
+						echo $this->Html->link('Item3','/item3'
+							//array( 'controller' => 'pages', 'action' => 'item3')
+							//array( 'update' => '#content','htmlAttributes' => array())
 						);
 						?>
 					</li>
 					<li>
 						<?php
-						echo $this->Js->link('Item4',
-							array( 'controller' => 'pages', 'action' => 'item4'),
-							array( 'update' => '#content','htmlAttributes' => array())
+						echo $this->Html->link('Item4','/item4'
+							//array( 'controller' => 'pages', 'action' => 'item4')
+							//array( 'update' => '#content','htmlAttributes' => array())
 						);
 						?>
 					</li>
@@ -136,7 +131,6 @@ echo $this->Html->docType('html5');
 			<article id="content">
 
 				<?php echo $this->Session->flash(); ?>
-
 				<?php echo $this->fetch('content'); ?>
 						
 			</article>
@@ -147,33 +141,33 @@ echo $this->Html->docType('html5');
 				    <ul>
 						<li class="current">
 							<?php 
-							echo $this->Js->link('Home',
-								array( 'controller' => 'pages', 'action' => 'home'),
-								array( 'update' => '#content', 'htmlAttributes' => array())
+							echo $this->Html->link('Home', '/'
+								//array( 'controller' => 'pages', 'action' => 'home')
+								//array( 'update' => '#content', 'htmlAttributes' => array())
 							);
 							?>
 						</li>
 						<li>
 							<?php
-							echo $this->Js->link('Item2',
-								array( 'controller' => 'pages', 'action' => 'item2'),
-								array( 'update' => '#content','htmlAttributes' => array())
+							echo $this->Html->link('Item2','/item2'
+								//array( 'controller' => 'pages', 'action' => 'item2')
+								//array( 'update' => '#content','htmlAttributes' => array())
 							);
 							?>
 						</li>
 						<li>
 							<?php
-							echo $this->Js->link('Item3',
-								array( 'controller' => 'pages', 'action' => 'item3'),
-								array( 'update' => '#content','htmlAttributes' => array())
+							echo $this->Html->link('Item3','/item3'
+								//array( 'controller' => 'pages', 'action' => 'item3')
+								//array( 'update' => '#content','htmlAttributes' => array())
 							);
 							?>
 						</li>
 						<li>
 							<?php
-							echo $this->Js->link('Item4',
-								array( 'controller' => 'pages', 'action' => 'item4'),
-								array( 'update' => '#content','htmlAttributes' => array())
+							echo $this->Html->link('Item4','/item4'
+								//array( 'controller' => 'pages', 'action' => 'item4')
+								//array( 'update' => '#content','htmlAttributes' => array())
 							);
 							?>
 						</li>
@@ -183,55 +177,38 @@ echo $this->Html->docType('html5');
 			
 		</div>
 		
-		<footer class="clearfix">			
-			<p><small>HTML5 SKELETON <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;"> &copy; </span> <span id="copyright_year"></span> - All rights reversed.</small></p>			
+		<footer id="footer" class="clearfix">
+			<p> BACK-END WEB BASED ON <a href="http://cakephp.org">CakePHP</a> <?php echo Configure::version(); ?></p>		
+			<p><small>HTML5 SKELETON <?php echo date('Y') ?> - Designed by <a href="http://smorcuend.es">smorcuend</a> <span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;"> &copy; </span> <span id="copyright_year"></span> - All rights reversed.</small></p>		
 		</footer>
+
 		<!--Fork me on Github -->
 		<a href="https://github.com/smorcuend/HTML5-SKELETON"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
 	</div><!--wrapper -->
 
 	<!-- here comes the javascript -->
-
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
 
 	<!-- this is where we put our custom functions -->
 	<script type="text/javascript" src="js/functions.js"></script>
 
-	<!-- Asynchronous google analytics; this is the official snippet.
-		 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-		 
-	<script>
+	<script type="text/javascript">
 
-		var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-			_gaq.push(['_trackPageview']);
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-31122385-3']);
+	  _gaq.push(['_trackPageview']);
 
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
 	</script>
-	-->
-  
-
-	<div id="wrapper">
-
-		
-
-		
-		<footer id="footer">
-  			<p> HTML5 WEB TEMPLATE BASED ON CAKEPHP <?php echo Configure::version(); ?></p>
-			<p><?php echo date('Y') ?> Designed by smorcuend</p>
-		</footer>
-		
-	</div>
-
 	<?php 
-	echo $this->Js->writeBuffer(); // Write cached scripts 
+	echo $this->JS->writeBuffer(); // Write cached scripts 
 	echo $this->element('sql_dump');
 	?>
 </body>
